@@ -1,0 +1,30 @@
+.posicao {
+  justify-self: center; /* seu pai e um display grid */
+  /* background-color: grey; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  padding: 15px 5px;
+}
+.posicao > div {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  justify-items: center;
+}
+.posicao > div > a {
+  /* background-color: #ccc; */
+  width: 30px;
+  height: 30px;
+  /* border-bottom: 5px solid #000; */
+  padding: 5px;
+  text-decoration: none;
+  color: #282828;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.posicao > div > a:hover {
+  border-bottom: 5px solid #767676;
+}

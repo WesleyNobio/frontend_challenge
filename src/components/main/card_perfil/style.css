@@ -1,0 +1,27 @@
+.card_perfil {
+  border: 1px solid #ccc;
+  min-width: 150px;
+  height: 200px;
+
+  display: grid;
+  grid-template-rows: 1.3fr auto auto 1fr;
+  row-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+.card_perfil > .foto {
+  align-self: flex-end;
+}
+.card_perfil > h5 {
+  font-size: 0.7rem;
+}
+.card_perfil > p:first-of-type {
+  padding-top: 5px;
+  font-size: 0.7rem;
+}
+.card_perfil > p:last-child {
+  width: 60%;
+  font-size: 0.6rem;
+  text-align: center;
+  align-self: flex-start;
+}

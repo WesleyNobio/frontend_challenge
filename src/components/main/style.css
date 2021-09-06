@@ -1,0 +1,108 @@
+main {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+main > div {
+  padding: 0px 100px;
+  width: 100%;
+  max-width: 1200px;
+}
+main > div > p {
+  font-size: 0.7rem;
+}
+main > div > h1 {
+  font-size: 1.5rem;
+  margin: 20px 0px 40px 0px;
+}
+.content {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 10px;
+}
+.ordem_and_cards {
+  display: grid;
+  grid-template-rows: 50px auto;
+  row-gap: 10px;
+}
+.ordem_card {
+  width: 100%;
+  padding: 0px 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ordem_card > div {
+  display: flex;
+  align-items: center;
+}
+.ordem_card > div > span {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+.select {
+  margin-left: 10px;
+  width: 100px;
+  position: relative;
+}
+#box_selecao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 4px 5px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+.icon_ordem {
+  display: flex;
+  justify-content: center;
+  padding: 0px 5px;
+}
+.opcoes_off {
+  max-height: 0px;
+  transition: 500ms;
+}
+.opcoes_on {
+  max-height: 100px;
+  transition: 500ms;
+}
+.opcoes {
+  background-color: #fff;
+  box-shadow: inset 0px 0px 0px 1px #ccc;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin-top: 2px;
+  overflow: hidden;
+}
+.op {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.op:hover {
+  background-color: #ccc;
+}
+.selecionado {
+  background-color: #ccc;
+}
+/* ========= Cardes ========= */
+.cards {
+  overflow: hidden;
+}
+.cards > div {
+  display: grid;
+  grid-template-columns: 780px 780px 780px;
+}
+.card_group {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  /* overflow-x: hidden; */
+}
