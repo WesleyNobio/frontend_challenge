@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
+import { BiChevronDown } from 'react-icons/bi';
 
 const PorEstado = () => {
+  const [visivel, setVisivel] = useState('estado_off');
+
+  function estado_visivel() {
+    let e_visivel = visivel == 'estado_off' ? 'estado_on' : 'estado_off';
+    setVisivel(e_visivel);
+  }
+
   return (
-    <div className="por_estado">
-      <h3>Por Estado</h3>
+    <div className={`por_estado ${visivel}`}>
+      <h3>
+        Por Estado{' '}
+        <span className="span_btn" onClick={() => estado_visivel()}>
+          <BiChevronDown />
+        </span>
+      </h3>
       <div>
         <input type="checkbox" id="sao_paulo" name="sao_paulo" />
         <label htmlFor="sao_paulo">São Paulo</label>

@@ -25,3 +25,9 @@
   text-align: center;
   align-self: flex-start;
 }
+
+@media screen and (max-width: 375px) {
+  .card_perfil {
+    min-width: 125px;
+  }
+}

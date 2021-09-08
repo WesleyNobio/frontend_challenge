@@ -83,7 +83,6 @@ const Main = () => {
   }
 
   function visivel_on_off() {
-    // console.log(deslocamento);
     let visivel = opcao_visivel == 'opcoes_off' ? 'opcoes_on' : 'opcoes_off';
     setOpcao(visivel);
   }

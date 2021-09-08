@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="react">
       <Header />
-      {/* <Main /> */}
+      <Main />
       {/* <Footer /> */}
     </div>
   );

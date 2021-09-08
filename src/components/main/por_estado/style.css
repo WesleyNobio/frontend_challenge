@@ -10,6 +10,9 @@
   margin-bottom: 5px;
   font-size: 0.9rem;
   font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
 }
 .por_estado > div {
   padding: 6px 5px;
@@ -24,4 +27,28 @@
 }
 .por_estado > .a_todos > a {
   color: rgb(65, 65, 65);
+}
+
+@media screen and (max-width: 900px) {
+  .por_estado {
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .estado_on {
+    min-height: 250px;
+    max-height: 300px;
+    transition: 1s;
+  }
+  .estado_off {
+    min-height: 50px;
+    max-height: 100px;
+    transition: 1s;
+  }
+  .por_estado > h3 {
+    padding-top: 0px;
+  }
+  .span_btn {
+    cursor: pointer;
+  }
 }
