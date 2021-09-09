@@ -14,6 +14,9 @@
   display: flex;
   justify-content: space-between;
 }
+.span_btn {
+  display: none;
+}
 .por_estado > div {
   padding: 6px 5px;
   display: grid;
@@ -49,6 +52,7 @@
     padding-top: 0px;
   }
   .span_btn {
+    display: flex;
     cursor: pointer;
   }
 }

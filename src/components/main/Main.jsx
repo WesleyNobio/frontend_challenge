@@ -22,13 +22,27 @@ const Main = () => {
     b2: false,
     b3: false
   });
+  const [width_body, setBody] = useState(document.body.clientWidth);
   const card_div = useRef(null);
   const card = useRef(null);
+
+  useEffect(() => {
+    deslocamento_link({ destino: 0, direcao: '+', caso: 1 });
+  }, [width_body]);
+
+  useEffect(() => {
+    function update_width() {
+      setBody(document.body.clientWidth);
+    }
+
+    window.addEventListener('resize', update_width);
+
+    return () => window.removeEventListener('resize', update_width);
+  }, []);
 
   function deslocamento_link(obj) {
     // o state "deslocamento" serve para indentificar a posição atual da div
     if (obj.destino == deslocamento) return;
-    console.log(obj.destino, obj.direcao);
 
     let distancia = obj.destino - deslocamento;
     let deslocamento_add = deslocamento + distancia;
@@ -200,6 +214,7 @@ const Main = () => {
               cor2={corAtiva2}
               d_1={deslocamento_link}
               border={border_on}
+              tamanho_div={card}
             />
           </div>
         </div>

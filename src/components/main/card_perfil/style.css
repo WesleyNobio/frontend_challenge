@@ -1,7 +1,7 @@
 .card_perfil {
   border: 1px solid #ccc;
   min-width: 150px;
-  height: 200px;
+  min-height: 200px;
 
   display: grid;
   grid-template-rows: 1.3fr auto auto 1fr;

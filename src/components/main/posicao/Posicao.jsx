@@ -26,13 +26,25 @@ const Posicao = props => {
           1
         </a>
         <a
-          onClick={() => props.d_1({ destino: 780, direcao: '-', caso: 2 })}
+          onClick={() =>
+            props.d_1({
+              destino: props.tamanho_div.current.offsetWidth,
+              direcao: '-',
+              caso: 2
+            })
+          }
           style={borda2}
         >
           2
         </a>
         <a
-          onClick={() => props.d_1({ destino: 1560, direcao: '-', caso: 3 })}
+          onClick={() =>
+            props.d_1({
+              destino: props.tamanho_div.current.offsetWidth * 2,
+              direcao: '-',
+              caso: 3
+            })
+          }
           style={borda3}
         >
           3
