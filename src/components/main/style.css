@@ -30,7 +30,6 @@ main > div > h1 {
   padding: 0px 10px;
   border: 1px solid #ccc;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -80,6 +79,7 @@ main > div > h1 {
   width: 100px;
   margin-top: 2px;
   overflow: hidden;
+  z-index: 1;
 }
 .op {
   padding: 4px 10px;
@@ -108,12 +108,17 @@ main > div > h1 {
 }
 
 @media screen and (max-width: 900px) {
+  main > div > h1 {
+    font-size: 1.2rem;
+  }
   .content {
     grid-template-columns: auto;
     grid-template-rows: 50px auto;
     column-gap: 0px;
     row-gap: 10px;
-    justify-items: center;
+  }
+  .ordem_card {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 800px) {
@@ -124,6 +129,13 @@ main > div > h1 {
 @media screen and (max-width: 700px) {
   main > div {
     padding: 0px 50px;
+  }
+  main > div > h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .ordem_card {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -137,8 +149,6 @@ main > div > h1 {
     width: 100%;
     padding: 0px 10px;
     border: 1px solid #ccc;
-    display: grid;
-    grid-template-columns: 100%;
   }
   .ordem_card > div {
     justify-content: flex-end;
@@ -148,6 +158,21 @@ main > div > h1 {
   main > div {
     padding: 0px 20px;
   }
+  .ordem_card {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 400px) {
+  .ordem_card {
+    font-size: 0.6rem;
+  }
+  .ordem_card > p {
+    margin-right: 5px;
+  }
+  .ordem_card > div > span {
+    margin-right: 0px;
+  }
+  .select {
+    margin-left: 0px;
+  }
 }

@@ -21,6 +21,7 @@
   padding: 6px 5px;
   display: grid;
   grid-template-columns: 10% auto;
+  column-gap: 5px;
   align-items: center;
   font-size: 0.9rem;
   color: rgb(65, 65, 65);
@@ -54,5 +55,14 @@
   .span_btn {
     display: flex;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .por_estado > h3 {
+    font-size: 0.7rem;
+  }
+  .por_estado > div {
+    font-size: 0.7rem;
   }
 }

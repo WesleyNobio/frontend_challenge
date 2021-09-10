@@ -41,7 +41,7 @@ const Main = () => {
   }, []);
 
   function deslocamento_link(obj) {
-    // o state "deslocamento" serve para indentificar a posição atual da div
+    /// o state "deslocamento" serve para indentificar a posição atual da div
     if (obj.destino == deslocamento) return;
 
     let distancia = obj.destino - deslocamento;

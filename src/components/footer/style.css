@@ -1,5 +1,4 @@
 footer {
-  /* background-color: grey; */
   background-color: #767676;
   display: flex;
   justify-content: center;
@@ -34,4 +33,26 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 40px 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 30px 50px;
+  }
+  .footer > h5 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 20px 20px;
+  }
+  .footer > h5 {
+    font-size: 0.7rem;
+  }
 }
